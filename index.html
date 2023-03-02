@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<link>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Share Modal | Harsh Sahu</title>
+    <link rel="shortcut icon" href="./assets/logo.jpg" type="image/x-icon"></link>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+</head>
+
+<body>
+
+  <div class="circle1"></div>
+  <div class="circle2"></div>
+
+  <!-- wrapper class for card -->
+  <div class="wrapper">
+
+    <div class="card-wrapper">
+      <div class="image"><img src="./assets/0105ME201063.jpg" alt="user" ></div>
+      <div class="user-name"><h2>Harsh Sahu</h2> </div>
+      <div class="designation"><h3>Full Stack Web Developer</h3> </div>
+
+      <div class="bottom-group">
+        <button onclick="openModal()" class="btn-share btn-card">
+          <i class="fa-solid fa-share"></i>
+          <div>share my profile</div>
+       </button>
+       <button class="btn-follow btn-card">follow me</button>
+      </div>
+
+   </div>
+
+   </div>
+
+   <!-- Modal Componet -->
+   <div class="modal">
+
+      <div class="modal-header">
+        <h1>Share My Profile </h1>
+        <div>
+           <i onclick="closeModal()" class="fa-solid fa-xmark close"></i>
+        </div>
+      </div>
+
+     <div>
+        <h3>Share this via </h3>
+
+        <div class="icon-container">
+
+          <a href="https://github.com/HarshSahuH" class="icon" id="github" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+         
+          <a href="https://www.linkedin.com/in/harsh-sahu-691b6824a/" class="icon" id="linkedin" target="_blank">
+           <i class="fa-brands fa-linkedin"></i>
+          </a>
+
+          <a href="mailto:9009339170mp@gmail.com" class="icon" id="gmail" target="_blank">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+
+        <a href="#" class="icon" id="whatsapp">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- overlay -->
+  <div class="overlay" onclick="closeModal()"></div>
+
+
+  <!-- <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script> -->
+
+ <script src="./script.js"></script>
+
+</body>
+</html>
